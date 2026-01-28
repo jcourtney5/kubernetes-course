@@ -15,8 +15,8 @@ spec:
         app: synergychat-crawler
     spec:
       containers:
-      - image: bootdotdev/synergychat-crawler:latest
-        name: synergychat-crawler
-        envFrom:
-        - configMapRef:
-            name: synergychat-crawler-configmap
+        - image: bootdotdev/synergychat-crawler:latest
+          name: synergychat-crawler
+          envFrom:
+            - configMapRef:
+                name: synergychat-crawler-configmap
